@@ -11,6 +11,10 @@ class HomeHandler(webapp2.RequestHandler):
     template = JINJA_ENVIRONMENT.get_template('home.html')
     self.response.write(template.render())
 
+  def post(self):
+    message = self.request.get('message')
+    self.response.write(message)
+
 routes = [
     ('/', HomeHandler),
 ]
