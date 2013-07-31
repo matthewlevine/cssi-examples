@@ -6,4 +6,4 @@ threadsafe: no
 
 handlers:
 - url: /.*
-  script: main.py
+  script: main.app
