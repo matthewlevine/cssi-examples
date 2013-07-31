@@ -15,3 +15,13 @@
   </div>
   <button>Post</button>
 </form>
+
+<ol>
+{% for message in messages %}
+  <li>
+    <div class="content">{{ message.content }}</div>
+    <div class="user">{{ message.user }}</div>
+    <div class="created">{{ message.created.strftime('%m/%d %I:%M%p') }}
+  </li>
+{% endfor %}
+</ol>
