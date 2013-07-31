@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <title>CSSI Whiteboard</title>
 <h1>Welcome to the CSSI Whiteboard!</h1>
+<div id="user">
+  You are logged in as <span class="email">{{ user.email() }}</span>.
+  <a href="{{ logout_url }}">Log Out</a>
+</div>
 
 <form action="/" method="post">
   <div>
